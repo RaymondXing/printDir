@@ -17,7 +17,7 @@ int find_dir_file(std::string dir_name, std::vector<std::string>& dir, std::vect
 	if (hFind == INVALID_HANDLE_VALUE)
 	{
 		std::cout << "find_dir_file() error! GetLastError() = " << ::GetLastError() << std::endl;
-		std::cout << "dir :" << dir_name.c_str() << std::endl;
+		std::cout << "dir :" << dir_name << std::endl;
 		return -1;
 	}
 	while (1)
