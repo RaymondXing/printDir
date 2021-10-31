@@ -9,6 +9,8 @@
 //输入文件夹路径dir_name，输出文件夹列表dir与文件列表file
 int find_dir_file(std::string dir_name, std::vector<std::string>& dir, std::vector<std::string>& file)
 {
+	dir.clear();
+	file.clear();
 	DIR *dirp;
 	struct dirent *dp;
 	dirp = opendir(dir_name.c_str());
